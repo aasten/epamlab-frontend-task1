@@ -1,0 +1,59 @@
+/* Styles go here */
+
+::selection {
+  background: seagreen; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: seagreen; /* Gecko Browsers */
+}
+
+body {
+  background-color: snow;
+}
+
+#header-block {
+  width: 62%;
+  display: inline-block;
+  background-color: palegreen;
+  text-align: left;
+  padding: 1em;
+  vertical-align: middle;
+}
+
+#header-brief {
+  width: 62%;
+  color: white;
+  font-size: 2em;
+  text-align: left; 
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#header-addons {
+  display: inline-block;
+  text-align: right;
+  font-family: 'Oswald', sans-serif;
+}
+
+#header-addons a {
+  color: white;
+   padding: 0.5em; 
+  
+}
+
+#header-addons  a:hover {
+  color: black;
+}
+
+#header-addons  div {
+  display: inline-block;
+}
+
+
+.horizontal-centered-childs {
+  text-align: center;
+}
+
+.header-area {
+  
+}
