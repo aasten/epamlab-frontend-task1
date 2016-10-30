@@ -1,59 +1,205 @@
 /* Styles go here */
 
-::selection {
-  background: seagreen; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: seagreen; /* Gecko Browsers */
-}
 
 body {
-  background-color: snow;
-}
-
-#header-block {
-  width: 62%;
-  display: inline-block;
-  background-color: palegreen;
-  text-align: left;
-  padding: 1em;
-  vertical-align: middle;
-}
-
-#header-brief {
-  width: 62%;
-  color: white;
-  font-size: 2em;
-  text-align: left; 
-  display: inline-block;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-#header-addons {
-  display: inline-block;
-  text-align: right;
-  font-family: 'Oswald', sans-serif;
-}
-
-#header-addons a {
-  color: white;
-   padding: 0.5em; 
-  
-}
-
-#header-addons  a:hover {
-  color: black;
-}
-
-#header-addons  div {
-  display: inline-block;
-}
-
-
-.horizontal-centered-childs {
+  background-color: whitesmoke;
   text-align: center;
 }
 
-.header-area {
-  
+.body-part-one {
+  width: 62%;
+  display: inline-block;
+  min-height: 100vh;
 }
+
+.body-part-one *::selection {
+  background: seagreen;
+  /* WebKit/Blink Browsers */
+}
+
+.body-part-one *::-moz-selection {
+  background: seagreen;
+  /* Gecko Browsers */
+}
+
+
+.body-part-one > * {
+  width: 100%;
+  display: inherit;
+}
+
+.part-one-contents {
+  width: 90%;
+  padding: 1em;
+  background-color: white;
+  text-align: justify;
+  /* Chrome, Safari, Opera */
+  -webkit-column-count: 3;
+  /* Firefox */
+  -moz-column-count: 3;
+  column-count: 3;
+  /* Chrome, Safari, Opera */
+  -webkit-column-width: 100px;
+  /* Firefox */
+  -moz-column-width: 100px;
+  column-width: 100px;
+  
+  -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
+  -moz-column-gap: 2em; /* Firefox */
+  column-gap: 2em;
+  
+  font-family: 'Droid Serif', sans-serif;
+}
+
+.paper-sheet-liftable {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.paper-sheet-liftable:hover {
+  margin-top: 0.9em;
+  margin-bottom: 1.1em; /*holding same effective height*/
+  box-shadow: 5px 5px 5px grey;
+}
+
+#part-one-header-block {
+  display: inline-block;
+  background-color: mediumseagreen;
+  text-align: left;
+  padding: 2em; 
+  vertical-align: middle;
+}
+
+#part-one-header-brief {
+  width: 62%;
+/*   padding-left: 1em; */
+  color: white;
+  font-size: 2em;
+  text-align: left;
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif; 
+}
+
+#part-one-header-addons {
+  width: 37%;
+  display: inline-block;
+  text-align: right;
+  font-family: 'Ubuntu', sans-serif; 
+/*   font-family: 'Oswald', sans-serif; */
+}
+
+#part-one-header-addons * {
+    color: white;
+    padding: 0.5em;
+}
+
+#part-one-header-addons a:hover {
+  color: black;
+}
+
+
+#part-two {
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+}
+
+#part-two > * {
+  width: 100%; /*align all nested childs to parent's width*/
+}
+
+#part-two *::selection {
+  background: darkviolet;
+  color: white;
+}
+#part-two *::-moz-selection {
+  background: darkviolet;
+  color: white;
+}
+
+#part-two-header {
+  padding: 0;
+  display: block;
+  background-color: blueviolet;
+  color: white;
+  text-align: right;
+}
+
+#part-two-header blockquote {
+  display: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+#part-two-header blockquote p:first-of-type {
+  font-size: 4em;
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 100px;
+}
+#part-two-header p {
+  padding: 50px;
+  margin: 0;
+  font-family: 'Lora', sans-serif;
+  font-size: 2em;
+  font: bold;
+}
+
+
+.gallery {
+  margin: 0;
+  text-align: center;
+}
+
+.gallery > div {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 250px;
+  min-width: 150px;
+  width: 25%; 
+  margin: 15px 20px;
+  border: 2px solid whitesmoke;
+  background-color: white;
+}
+
+.gallery > div:hover {
+    border: 2px solid #777;
+}
+
+.gallery > div > img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery > div > p {
+    padding: 1em;
+    text-align: center;
+    font-family: 'Lora' sans-serif;
+    font-size: 1em;
+} 
+
+
+
+#footer {
+  width: 100%;
+  margin-top: 3em;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: white;
+  color: gainsboro;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+#footer:hover {
+  background: lime;
+  color: white;
+}
+
+
+#footer .hidden-text {
+  color:white;
+}
+
+
