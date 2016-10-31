@@ -1,0 +1,111 @@
+body {
+  text-align: center;
+}
+
+.gallery {
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
+}
+
+.gallery *::selection {
+  background: #b9ca93;
+  color: #4a6118;
+}
+.gallery *::-moz-selection {
+  background: #b9ca93;
+  color: #4a6118;
+}
+
+.gallery > div {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 500px;
+  min-width: 250px;
+  width: 25%; 
+  margin: 15px 20px;
+  padding: 1em;
+  padding-bottom: 0;
+  border: 2px solid whitesmoke;
+  background-color: white;
+}
+
+
+.gallery > div > img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery > div > p {
+    padding: 1em;
+    text-align: center;
+} 
+
+
+.table {
+  width: 62%;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Helvetica', 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  padding-top: 1em;
+}
+
+.table *::selection {
+  background-color: #cf9696;
+  color: #671a1a;
+/*   background-color: #be8aaa;
+color: white; */
+}
+.table *::-moz-selection {
+  background-color: #cf9696;
+  color: #671a1a;
+}
+
+.table table {
+  padding: 1em;
+  display: inline-block;
+}
+
+.table p {
+  font-weight: bold;
+  color: #511439;
+  margin-bottom: 0;
+}
+
+.table table td {
+  padding: 0.5em;
+}
+.table table th {
+  padding: 1em;
+}
+
+.table table tr:nth-child(1) {
+  background-color: #511439;
+  color: white;
+}
+
+.table table tr:nth-child(2n+3) {
+  background-color: #7d3f65;
+  color: white;
+}
+
+.table table tr:nth-child(2n+2) {
+  background-color: #be77a2;
+  color: white;
+}
+
+/* .table table tr:first-type-of {
+  background-color: #be77a2;
+  color: black;
+}
+
+.table table tr:first-type-of:after {
+  background-color: #be8aaa;
+  color: black;
+} */
+
+

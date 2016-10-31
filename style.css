@@ -92,8 +92,13 @@ body {
     padding: 0.5em;
 }
 
+#part-one-header-addons a {
+  text-decoration: none;
+}
+
 #part-one-header-addons a:hover {
   color: black;
+  text-decoration: underline;
 }
 
 
