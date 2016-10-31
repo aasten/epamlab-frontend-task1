@@ -10,6 +10,14 @@ body {
   font-size: 1em;
 }
 
+.gallery::selection {
+  background: #b9ca93;
+  color: #4a6118;
+}
+.gallery::-moz-selection {
+  background: #b9ca93;
+  color: #4a6118;
+}
 .gallery *::selection {
   background: #b9ca93;
   color: #4a6118;

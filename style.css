@@ -64,8 +64,7 @@ body {
 #part-one-header-block {
   display: inline-block;
   background-color: mediumseagreen;
-  text-align: left;
-  padding: 2em; 
+  text-align: center;
   vertical-align: middle;
 }
 
@@ -74,24 +73,28 @@ body {
 /*   padding-left: 1em; */
   color: white;
   font-size: 2em;
+  padding: 0;
   text-align: left;
   display: inline-block;
   font-family: 'Ubuntu', sans-serif; 
 }
+#part-one-header-brief p {
+  padding: 1em;
+}
 
 #part-one-header-addons {
-  width: 37%;
-  display: inline-block;
+  width: 37%; 
+  display: inline-block; 
   text-align: right;
   font-family: 'Ubuntu', sans-serif; 
 /*   font-family: 'Oswald', sans-serif; */
 }
 
+
 #part-one-header-addons * {
     color: white;
-    padding: 0.5em;
+    padding: 1em;
 }
-
 #part-one-header-addons a {
   text-decoration: none;
 }
@@ -158,8 +161,8 @@ body {
 .gallery > div {
   display: inline-block;
   vertical-align: top;
-  max-width: 250px;
-  min-width: 150px;
+  max-width: 500px;
+  min-width: 250px;
   width: 25%; 
   margin: 15px 20px;
   border: 2px solid whitesmoke;
